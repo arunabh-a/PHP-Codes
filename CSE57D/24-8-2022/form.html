@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="form.php" method="post">
+        Name: <input type="text" name="Name"><br><br>
+        Section: <select>
+                    <option name="class" value="JK201">JK201</option>
+                    <option name="class" value="JK202">JK202</option>
+                    <option name="class" value="JK211">JK211</option>
+                    <option name="class" value="JK212">JK212</option>
+                </select> <br><br> 
+        Address: <select>
+            <optgroup>
+                    <option name="addr" value = "UP">UP</option>
+                    <option name="addr" value= "Himachal Pradesh">Himachal Pradesh</option>
+                    <option name="addr" value= "Telengana">Telengana</option>
+                    <option name="addr" value= "Tamil">Tamil</option>
+                    <option name="addr" value= "Kerala">Kerala</option>
+                </optgroup>
+                </select>
+                <br><br>
+        Comment: <textarea name="comment" rows="5" cols="40"></textarea><br><br>
+        Gender: <br>
+                    &nbsp Male<input type="checkbox" name="Gender" value="Male">
+                Female<input type="checkbox" name="Gender" value="Female">
+                Others<input type="checkbox" name="Gender" value="Others"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
