@@ -21,7 +21,7 @@
                     this.responseText;
                 }
             };
-            xhttp.open("GET", "ajax_info.txt", true);
+            xhttp.open("GET", "bin.txt", true);
             xhttp.send();
         }
     </script>    
