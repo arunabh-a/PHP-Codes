@@ -21,7 +21,7 @@
         $connect = openconnect();
     
     
-    $sqlinsert = "INSERT INTO `student` (`name`, `class`, `rollno`, `desc`) VALUES ('$name', '$class', '$rollno', '$desc');";
+        $sqlinsert = "INSERT INTO `student` (`name`, `class`, `rollno`, `desc`) VALUES ('$name', '$class', '$rollno', '$desc');";
     
         if($connect->query($sqlinsert)==true){
             echo "\n Upload Successful";
@@ -30,14 +30,14 @@
             echo "Upload Failed";
         }
         
-    $sqldelete = "DELETE FROM student where rollno = 22;";
+        $sqldelete = "DELETE FROM student where rollno = $rollno;";
 
-            if($connect->query($sqldelete)== true){
-                echo "<br> Deletion Successful";
-            }
-            else{
-                echo "Deletion Failed";
-            }
+        if($connect->query($sqldelete)== true){
+            echo "<br> Deletion Successful";
+        }
+        else{
+            echo "Deletion Failed";
+        }
 
 
 

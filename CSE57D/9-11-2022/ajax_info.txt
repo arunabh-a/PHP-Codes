@@ -1,1 +1,3 @@
-Mam Ho Gaya Practical
+Name = Arunabh Bhattacharya
+Class = JK202
+Roll No = 21
